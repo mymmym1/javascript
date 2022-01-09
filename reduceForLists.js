@@ -1,3 +1,5 @@
+//https://www.liaoxuefeng.com/wiki/1022910821149312/1024322552460832
+
 'use strict';
 
 function string2int(s) {
