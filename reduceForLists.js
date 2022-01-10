@@ -15,3 +15,25 @@ function string2int(s) {
     
     return result;
 }
+/***********************************************************************/
+function normalize(arr) {
+    var newNameList = [];
+    for (var i = 0; i < arr.length; i++) {
+        var l = [arr[i][0].toUpperCase()];
+        for (var j = 1; j < arr[i].length; j++) {
+            l.push(arr[i][j].toLowerCase());
+        }
+        var name = l.reduce(function (x, y) {
+            return x + y;
+        });
+        newNameList.push(name);
+    }
+    return newNameList;
+}
+// Test:
+if (normalize(['adam', 'LISA', 'barT']).toString() === ['Adam', 'Lisa', 'Bart'].toString()) {
+    console.log('Pass!');
+}
+else {
+    console.log('Fail!');
+}
