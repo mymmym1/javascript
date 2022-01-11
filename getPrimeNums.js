@@ -1,3 +1,5 @@
+// https://www.liaoxuefeng.com/wiki/1022910821149312/1024327002617536
+// Reference: https://blog.csdn.net/afei__/article/details/80638460
 function get_primes(arr) {
     var r = arr.filter(function(n) {
         if (n <= 3) {
